@@ -1,6 +1,6 @@
-<section class="bg-white dark:bg-base-200">
+<section id="hero" class="bg-white dark:bg-base-200 transition-opacity duration-700 ease-in-out">
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-    <a target="_blank" href="https://marketingexl.com"
+    <a href="#map"
       class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
       role="alert">
       <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span
@@ -17,27 +17,26 @@
     <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
       Where Your Brand's Potential Becomes Achievement
     </p>
-    <div class="flex mb-8 mt-8 justify-center">
-      <button [routerLink]="['/home', 'login']"
-        class="bg-gradient-to-l hover:bg-gradient-to-r from-cyan-600 to-blue-600 btn btn-wide ml-4 mr-4">Get
-        Started</button>
-      <button [routerLink]="['/home', 'sign-up']"
-        class="bg-gradient-to-l hover:bg-gradient-to-r from-violet-600 to-fuchsia-600 btn btn-wide ml-4 mr-4">Learn
-        More</button>
+    <div class="flex flex-col sm:flex-row mb-8 mt-8 justify-center items-center">
+      <a href="#about"
+        class="btn bg-gradient-to-l hover:bg-gradient-to-r from-cyan-600 to-blue-600 btn btn-wide my-2 sm:my-0 sm:mr-2 hover:scale-105 transition-transform duration-300">Get Started</a>
+      <a href="#services"
+        class="btn bg-gradient-to-l hover:bg-gradient-to-r from-violet-600 to-fuchsia-600 btn btn-wide my-2 sm:my-0 sm:ml-2 hover:scale-105 transition-transform duration-300">Learn More</a>
     </div>
     <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
       <span class="font-semibold text-gray-400">At MarketingEXL, we don't just amplify your digital presence; we transform it into a powerhouse of engagement, growth, and unparalleled success. As the digital landscape evolves, your brand requires a navigator that not only understands the journey but also masters the paths to dominance. Welcome aboard!</span>
       <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500">
         <div class="mockup-code">
-          <pre data-prefix="$"><code>Have new ideas? Want us to help you with your initiative?</code></pre>
-          <pre data-prefix=">" class="text-warning"><code>gathering requirement...</code></pre>
-          <pre data-prefix=">" class="text-success"><code>done!</code></pre>
+          <pre data-prefix="$"><code>Have new ideas? Want us to help you?</code></pre>
+          <pre data-prefix=">" class="text-warning"><code>Reach out to us...</code></pre>
+          <pre data-prefix=">" class="text-success"><code>and its done!</code></pre>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-gray-100 dark:bg-gray-800">
+
+<section id="about" class="bg-gray-100 dark:bg-gray-800 transition-opacity duration-700 ease-in-out">
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
     <h2
       class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -51,7 +50,7 @@
       </p>
     </div>
     <div class="hero-content flex-col lg:flex-row">
-      <div class="card lg:card-side bg-base-100 shadow-xl">
+      <div class="card lg:card-side bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/our-values.webp" alt="Our Values" /></figure>
         <div class="card-body">
           <h2 class="card-title">Our Values</h2>
@@ -60,7 +59,7 @@
             true to these values, we can deliver exceptional results for our clients.</p>
         </div>
       </div>
-      <div class="card lg:card-side bg-base-100 shadow-xl">
+      <div class="card lg:card-side bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/our-team.webp" alt="Our Team" /></figure>
         <div class="card-body">
           <h2 class="card-title">Our Team</h2>
@@ -73,13 +72,13 @@
   </div>
 </section>
 
-<section class="dark:bg-base-200 py-12">
+<section id="services" class="dark:bg-base-200 py-12 transition-opacity duration-700 ease-in-out">
   <div class="container mx-auto px-6">
     <h2 class="text-center text-3xl font-bold text-base-content mb-8">
       Our Services
     </h2>
-    <div class="grid grid-cols-3 gap-6">
-      <div class="card bg-base-100 shadow-xl">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/sma.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">Social Media Advertising</h3>
@@ -88,7 +87,7 @@
             while keeping your advertising budget in check.</p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/seo.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">Local SEO</h3>
@@ -97,7 +96,7 @@
             credibility and visibility in your local market.</p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/e-comm.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">E-commerce Optimization</h3>
@@ -106,7 +105,7 @@
             average order value and customer lifetime value.</p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/email-auto.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">Email Automation</h3>
@@ -115,7 +114,7 @@
             targeted campaigns that drive engagement and conversions.</p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-xl hover:scale-105 transition-transform duration-300">
         <figure><img src="assets/images/legacy/content-creation.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">Content Creation</h3>
@@ -124,7 +123,7 @@
             brand and tailored to your audience.</p>
         </div>
       </div>
-      <div class="card bg-base-100 shadow-xl">
+      <div class="card bg-base-100 shadow-xl transition-transform duration-300">
         <figure><img src="assets/images/legacy/web-analytics.webp" alt="Service 1"></figure>
         <div class="card-body">
           <h3 class="card-title">Web Analytics</h3>
@@ -136,7 +135,8 @@
     </div>
   </div>
 </section>
-<section class="dark:bg-gray-800 body-font relative mt-4 mb-4">
+
+<section id="map" class="dark:bg-gray-800 body-font relative mt-4 mb-4 transition-opacity duration-700 ease-in-out">
   <div class="absolute inset-0 bg-gray-300">
     <iframe frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.922732108613!2d77.3806253!3d28.5102289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce937dd33a677%3A0xf2482b431fe4c606!2sATS%20BOUTIQUE!5e0!3m2!1sen!2sin!4v1714845950859!5m2!1sen!2sin"
@@ -159,35 +159,37 @@
     </div>
   </div>
 </section>
-<nav class="px-10 py-2 flex justify-start">
+
+<nav id="header" class="px-10 py-2 flex justify-start">
   <h6 class="footer-title">All Services</h6>
 </nav> 
 <footer class="footer px-10 bg-base-200 text-base-content">
   <nav>
-    <a class="link link-hover">Social media Management</a>
-    <a class="link link-hover">SEO</a>
-    <a class="link link-hover">PPC Advertising</a>
-    <a class="link link-hover">Email Marketing</a>
-    <a class="link link-hover">Web design and Development</a>
+    <a href="#services" class="link link-hover">Social media Management</a>
+    <a href="#services" class="link link-hover">SEO</a>
+    <a href="#services" class="link link-hover">PPC Advertising</a>
+    <a href="#services" class="link link-hover">Email Marketing</a>
+    <a href="#services" class="link link-hover">Web design and Development</a>
   </nav>
   <nav>
-    <a class="link link-hover">Logo and Branding</a>
-    <a class="link link-hover">Copywriting</a>
-    <a class="link link-hover">Content Marketing</a>
-    <a class="link link-hover">Influencer Marketing</a>
-    <a class="link link-hover">PR</a>
+    <a href="#services" class="link link-hover">Logo and Branding</a>
+    <a href="#services" class="link link-hover">Copywriting</a>
+    <a href="#services" class="link link-hover">Content Marketing</a>
+    <a href="#services" class="link link-hover">Influencer Marketing</a>
+    <a href="#services" class="link link-hover">PR</a>
   </nav>
   <nav>
-    <a class="link link-hover">Political Marketing</a>
-    <a class="link link-hover">Offline Marketing</a>
-    <a class="link link-hover">Google Ads, Facebook & meta-Ads, LinkedIn Ads</a>
-    <a class="link link-hover">Analytics and conversion rate optimization</a>
+    <a href="#services" class="link link-hover">Political Marketing</a>
+    <a href="#services" class="link link-hover">Offline Marketing</a>
+    <a href="#services" class="link link-hover">Google Ads, Facebook & meta-Ads, LinkedIn Ads</a>
+    <a href="#services" class="link link-hover">Analytics and conversion rate optimization</a>
   </nav>
 </footer>
 <footer class="footer p-10 border-t bg-base-200 text-base-content border-base-300">
   <aside class="items-center grid-flow-col">
     <p><b>MarketingEXL</b> <br>ATS BOUQUET, Block B, Sector 132, Noida, Uttar Pradesh, India
       <br><a href="mailto:info@marketingexl.com">info@marketingexl.com</a>
+      <br>+91-8178070852
     </p>
   </aside>
   <nav class="md:place-self-center md:justify-self-end">
